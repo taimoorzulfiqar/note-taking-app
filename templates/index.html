@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <form action="/" method="POST">
+         <textarea name="note"></textarea>
+         <button>Save</button>
+    </form>
+    {% for note in notes %}
+            <p>{{ note[1] }}</p>
+        {% endfor %}
+</body>
