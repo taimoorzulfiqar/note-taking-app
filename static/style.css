@@ -5,3 +5,39 @@ body {
 textarea.form-control {
     border: none !important;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.note-card {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+}
+
+.note-text {
+    margin: 0 0 0.75rem 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note-date {
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin-top: auto;
+}
